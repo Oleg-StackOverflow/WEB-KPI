@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Салон краси</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #fafafa;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        header, footer {
+            background: #f2a2c0;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background: #ffdfec;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        #content {
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Салон краси</h1>
+    </header>
+
+    <nav>
+        <a href="https://example.com">Головна</a>
+        <a href="https://example.com">Послуги</a>
+        <a href="https://example.com">Майстри</a>
+        <a href="https://example.com">Запис онлайн</a>
+    </nav>
+
+    <div id="content">
+        <h2>Наші послуги</h2>
+        <p>Опис послуг салону...</p>
+
+        <img src="image.png" alt="Салон">
+        <p>Детальніше про нас <a href="https://example.com">тут</a>.</p>
+
+        <ol>
+            <li>Манікюр</li>
+            <li>Стрижка</li>
+            <li>Макіяж</li>
+        </ol>
+
+        <p>test<sup>TEST</sup> <sub>tEsT</sub></p>
+
+        <video width="320" height="240" controls>
+            <source src="video.mp4" type="video/mp4">
+            Ваш браузер не підтримує відео.
+        </video>
+
+        <form>
+            <label for="lastname">Прізвище:</label>
+            <input type="text" id="lastname" name="lastname"><br><br>
+            <label for="firstname">Ім’я:</label>
+            <input type="text" id="firstname" name="firstname"><br><br>
+            <button type="submit">Надіслати</button>
+        </form>
+
+        <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d265248.5178536484!2d34.75774084379154!3d48.462213493915524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d958dd6bcbcf29%3A0xf36f6b6f23cdd3b5!2z0JTQstC10YDQvdCwLCDQk9GA0LXRgdGW0LvRjNC90YvQuQ!5e0!3m2!1suk!2sua!4v1726161523456!5m2!1suk!2sua"
+                width="600"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+    </div>
+
+    <footer>
+        <p>© 2025 Салон краси. Всі права захищені.</p>
+    </footer>
+</div>
+</body>
+</html>
