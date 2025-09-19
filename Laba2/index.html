@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Практична робота №2</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        header nav a:hover {
+            color: yellow;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 200px;
+            background: #f2f2f2;
+            padding: 15px;
+            border-right: 2px solid #ccc;
+        }
+        .sidebar ul {
+            list-style-type: square;
+            padding: 0;
+        }
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+        .sidebar a {
+            text-decoration: none;
+            color: #333;
+        }
+        .sidebar a:hover {
+            color: blue;
+        }
+
+        .content {
+            flex: 1;
+            padding: 15px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+        .content img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            transition: transform 0.3s;
+        }
+        .content img:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 10px;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="logo.png" alt="Логотип" width="120" height="auto">
+    </div>
+
+    <nav>
+        <a href="https://example.com">Головна</a>
+        <a href="https://example.com">Про нас</a>
+        <a href="https://example.com">Контакти</a>
+        <a href="https://example.com">FAQ</a>
+    </nav>
+</header>
+
+<div class="container">
+    <aside class="sidebar">
+        <h3>Меню</h3>
+        <ul>
+            <li><a href="https://example.com">Головна</a></li>
+            <li><a href="https://example.com">Успішність</a></li>
+            <li><a href="https://example.com">Контакти</a></li>
+            <li><a href="https://example.com">FAQ</a></li>
+        </ul>
+    </aside>
+
+    <main class="content">
+        <img src="photo.jpg" alt="img1">
+        <img src="photo.jpg" alt="img2">
+        <img src="photo.jpg" alt="img3">
+        <img src="photo.jpg" alt="img4">
+        <img src="photo.jpg" alt="img5">
+        <img src="photo.jpg" alt="img6">
+    </main>
+</div>
+
+<footer>
+    <div class="footer-container">
+        <p>© 2025 Практична робота №2</p>
+        <p>Email: info@example.com | Телефон: +38 (099) 999-99-99</p>
+        <nav>
+            <a href="https://example.com">Головна</a>
+            <a href="https://example.com">Контакти</a>
+            <a href="https://example.com">FAQ</a>
+        </nav>
+    </div>
+</footer>
+
+</body>
+</html>
